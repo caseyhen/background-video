@@ -1,0 +1,90 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.hello #wistia_fji9juvptr {
+  position: absolute;
+  left: -3000px;
+  top: 0px;
+  z-index: 6;
+  visibility: hidden;
+}
+.hello #wistia_z1ggfo8f86 {
+  z-index: 4;
+  visibility: hidden;
+}
+.hello #video_container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+.hello #video_container #text {
+  position: absolute;
+  z-index: 6;
+  text-align: center;
+  opacity: 0;
+}
+.hello #video_container #text #actions {
+  height: 95px;
+}
+.hello #video_container #text #playbutton {
+  z-index: 3;
+  margin: 0 auto;
+  margin-top: 60px;
+  height: 95px;
+  display: block;
+}
+.hello #video_container #text #playbutton .rectangle {
+  background-color: #3ea9f5;
+  width: 149px;
+  height: 95px;
+  opacity: 0.8;
+  margin: 0 auto;
+}
+.hello #video_container #text #playbutton .rectangle:hover {
+  background-color: #52bdff;
+  cursor: pointer;
+}
+.hello #video_container #text #playbutton .triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 22px 0 22px 32px;
+  border-color: transparent transparent transparent white;
+  margin: 0 auto;
+  position: relative;
+  bottom: 70px;
+  pointer-events: none;
+}
+.hello #cover_all {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 100%;
+  width: 100%;
+}
+.hello #ex {
+  position: absolute;
+  right: -3000px;
+  top: 25px;
+  z-index: 7;
+  cursor: pointer;
+  opacity: 0.8;
+}
+.hello #ex:hover {
+  opacity: 1;
+}
+.hello #main-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background-image: url(../images/main.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
