@@ -38,7 +38,7 @@ fullScreenVideo = {
 
       /**
        * We load the thumbnail in the background while we wait
-       * for the video to load. Once loaded, we pause, reset to 
+       * for the video to load and play. Once loaded, we pause, reset to 
        * frame zero, show the video then play it.
        */
       wistiaEmbed.bind("play", function(){
@@ -75,10 +75,10 @@ fullScreenVideo = {
       overlayEmbed._keyBindingsActive = false;
     },
     /**
-     * Fix the size of the vidoes, images, and text on page
+     * Fix the size of the images and text on page
      * @param None
      */
-    fixVideoSize: function()
+    fixTextPosition: function()
     {
       var width = $( window ).width();
       var height = $( window ).height();
@@ -96,12 +96,12 @@ fullScreenVideo = {
  * then display the text on the page.
  */
 $(document).ready(function() {
-  fullScreenVideo.fixVideoSize();
+  fullScreenVideo.fixTextPosition();
   $("#text").delay(200).animate({ opacity: 1 }, 650);
 });
 
 // If the widow is resized, resize the videos
-$(window).resize(fullScreenVideo.fixVideoSize);
+$(window).resize(fullScreenVideo.fixTextPosition);
 
 // When the play button is clicked, call the play function
 $(".rectangle").click(fullScreenVideo.playVideo);

@@ -2,14 +2,14 @@ body {
 	margin: 0;
 	padding: 0;
 }
-.hello #wistia_fji9juvptr {
+.hello .overlayVideo {
   position: absolute;
   left: -3000px;
   top: 0px;
   z-index: 6;
   visibility: hidden;
 }
-.hello #wistia_z1ggfo8f86 {
+.hello .backgroundVideo {
   z-index: 4;
   visibility: hidden;
 }
